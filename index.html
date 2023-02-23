@@ -1,9 +1,48 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mejorarChallenge</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img class="logoImg" src="img/logo.png">
+        <h1 class="tittle">Encriptador de mensaje</h1>
+        
+      </div>
+      <div class="left">
+          <input class="text-input" type="text" name="input-texto" id="inputtexto" placeholder="Ingrese el texto aqui">
+      </div>
+      <div class="right">
+        <img src="img/Muñeco.png" id="imgDer">
+        <h1 id="texto">Ningún mensaje fue encontrado</h1>
+        <textarea id="texto2" >Ingresa el texto que desees encriptar o desenciptar.</textarea>
+        <button type="button" id="copiar" onclick="copia()">¡Copiar!</button>
+      </div>
+      <div class="left-button">
+        <p>Sólo letra minusculas y sin acento</p>
+        <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+        <button type="button" id="btn-desencriptar" onclick="desencriptar()">desencriptar!</button>
+      </div>
+    </div>
+  
+  </body>
+</html>
+
+
+
+
+
+<!--
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" >
-    <script type="text/javascript" src="script.js"></script>
+      <script type="text/javascript" src="script.js"></script>––>
     
     <title>Document</title>
 </head>
@@ -18,10 +57,10 @@
     </header>
     
 
-    <main> </main>
+    <main> 
 
         <div class="contenedorIzquierdo">
-            <textarea name="entradaTexto"  class="entrada_Texto" type="text" placeholder="Ingrese texto aqui"></textarea>
+            <input class="entrada_Texto"  type="text" name="entradaTexto" id="entradaTexto"  placeholder="Ingrese texto aqui">
 
 
         </div>
@@ -29,8 +68,8 @@
         <div class="contedorDerecho">
             <img src="img/Muñeco.png" id="imgMuneco"> 
             <h2 id="mensajederecho">Ningun mensaje fue encontrado</h2>
-             <textarea name="name" class="textoEncriptado"id="ingresoTexto" cols="30" rows="10">Ingrese el texto que desea Encriptar o Desencriptar</textarea>           
-             <button id="copiar" type="button" name="button" onclick="copiar()">Copiar</button>
+             <textarea id="ingresoTexto">Ingrese el texto que desea Encriptar o Desencriptar</textarea>           
+             <button type="button" id="copiar"  name="button" onclick="copiar()">Copiar</button>
         </div>
         
         
@@ -41,9 +80,11 @@
             <p>Solo minusculas y si acentos</p>
 
             <button type="button" id="botonEncriptar" onclick="btnEncriptar()" >Encriptar</button>
-            <button type="button" id="botonDesencriptar"  >Desencriptar</button>
+            <button type="button" id="botonDesencriptar" onclick="btnDesencriptar()" >Desencriptar</button>
 
         </div>
+    </main>
     
 </body>
 </html>
+-->

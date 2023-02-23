@@ -1,4 +1,64 @@
-const textArea = document.querySelector(".entradaTexto");
+function encriptar() {
+    var texto = document.getElementById("inputtexto").value.toLowerCase();
+    //i es para que afecte a tanto mayus como minus
+    //g afecta a toda la linea
+    //m afecta a multiples lineas
+    var txtcifrado = texto.replace(/e/igm,"enter");
+    var txtcifrado = txtcifrado.replace(/o/igm,"ober");
+    var txtcifrado = txtcifrado.replace(/i/igm,"imes");
+    var txtcifrado = txtcifrado.replace(/a/igm,"ai");
+    var txtcifrado = txtcifrado.replace(/u/igm,"ufat");
+    document.getElementById("imgDer").style.display = "none";
+    document.getElementById("texto").style.display = "none";
+    document.getElementById("copiar").style.display = "show";
+    document.getElementById("texto2").innerHTML = txtcifrado;
+    document.getElementById("inputtexto").innerHTML = " ";
+    document.getElementById("copiar").style.display = "inherit";
+  }
+  
+  function desencriptar() {
+    var texto = document.getElementById("inputtexto").value.toLowerCase();
+    var txtcifrado = texto.replace(/enter/igm,"e");
+    var txtcifrado = txtcifrado.replace(/ober/igm,"o");
+    var txtcifrado = txtcifrado.replace(/imes/igm,"i");
+    var txtcifrado = txtcifrado.replace(/ai/igm,"a");
+    var txtcifrado = txtcifrado.replace(/ufat/igm,"u");
+    document.getElementById("imgDer").style.display = "none";
+    document.getElementById("texto").style.display = "none";
+    document.getElementById("copiar").style.display = "show";
+    document.getElementById("texto2").innerHTML = txtcifrado;
+    document.getElementById("inputtexto").innerHTML = " ";
+    document.getElementById("copiar").style.display = "inherit";
+  }
+  
+  function copia() {
+    var contenido = document.querySelector("#texto2");
+    contenido.select();
+    document.execCommand('copy');
+    alert("Copied!");
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const textArea = document.querySelector(".entradaTexto");
 const mensaje = document.querySelector(".textoEncriptado");
 
 
@@ -27,6 +87,7 @@ function encriptar(stringEncriptado){
     return stringEncriptado
 }
 
+*/
 
 
 
@@ -58,43 +119,6 @@ function encriptar(stringEncriptado){
 
 
 
+/*
 
-
-/*function encriptar(){
-    var texto= document.getElementById("entrada_Texto").value.toLowerCase();
-    var textCifrado= texto.replace(/e/igm, "enter");
-    var textCifrado= textoCifrado.replace(/o/igm, "ober");
-    var textCifrado= textoCifrado.replace(/i/igm, "imes");
-    var textCifrado= textoCifrado.replace(/a/igm, "ai");
-    var textCifrado= textoCifrado.replace(/u/igm, "ufat");
-
-    document.getElementById("imgMuneco").style.display= "none" ;
-    document.getElementById("mensajederecho").style.display= "none";
-    document.getElementById("ingresoTexto").innerHTML = textCifrado;  
-    document.getElementById("copiar").style.display = "show";
-    document.getElementById("copiar").style.display ="inherit";
-
-}
-
-function desencriptar(){
-    var texto= document.getElementById("entrada_Texto").value.toLowerCase();
-    var textCifrado= texto.replace(/enter/igm, "e");
-    var textCifrado= textoCifrado.replace(/ober/igm, "o");
-    var textCifrado= textoCifrado.replace(/imes/igm, "i");
-    var textCifrado= textoCifrado.replace(/ai/igm, "a");
-    var textCifrado= textoCifrado.replace(/ufat/igm, "u");
-
-    document.getElementById("imgMuneco").style.display= "none";
-    document.getElementById("mensajederecho").style.display= "none";
-    document.getElementById("ingresoTexto").innerHTML = textCifrado;  
-    document.getElementById("copiar").style.display = "show";
-    document.getElementById("copiar").style.display ="inherit";
-
-}
-
-function copiar(){
-    var contenido = document.querySelector("#ingresoTexto");
-    contenido.select();
-    document.execCommand("copy");
-    alert("Se copio")
-}*/
+  */
